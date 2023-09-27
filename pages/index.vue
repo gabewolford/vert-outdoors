@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+useHead({
+  title: "VERT Outdoors",
+});
+</script>
 
 <template>
   <main class="max-w-[90vw] w-full mx-auto my-auto">
