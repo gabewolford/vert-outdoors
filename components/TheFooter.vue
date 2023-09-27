@@ -1,8 +1,6 @@
 <template>
   <footer class="mt-auto bg-[#15150F] p-4 text-center">
-    <nav
-      class="flex flex-col lg:flex-row justify-between gap-6 items-center lg:h-[250px]"
-    >
+    <nav class="flex flex-col lg:flex-row justify-between gap-6 items-center">
       <NuxtLink to="/">
         <img
           src="/img/vert-logo.webp"
