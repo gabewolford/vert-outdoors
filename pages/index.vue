@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <main
-    class="max-w-[90vw] 2xl:max-w-[70vw] w-full mx-auto my-auto flex flex-col gap-16 lg:gap-8 lg:pt-6 py-10 lg:pb-20"
+    class="max-w-[90vw] 2xl:max-w-[70vw] mx-auto my-auto flex flex-col gap-16 lg:gap-8 lg:pt-6 py-10 lg:pb-20"
   >
     <Hero
       headerText="Elevate your outdoor experience"
