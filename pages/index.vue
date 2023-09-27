@@ -10,7 +10,7 @@ useHead({
   >
     <Hero
       headerText="Elevate your outdoor experience"
-      subtext="We proudly represent some of the most iconic brands in specialty outdoor, ski, bike, and beyond in the Mid-Atlantic region"
+      subtext="We proudly represent the most iconic brands in specialty outdoor, ski, bike and beyond in the Mid-Atlantic region"
       ctaText="Learn more"
       imageUrl="/img/hh-hero.jpeg"
       altText="hero image"
