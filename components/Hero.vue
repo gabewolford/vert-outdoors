@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-6 lg:h-[80vh]">
+  <div class="flex flex-col lg:flex-row gap-8 lg:h-[80vh]">
     <div
       class="animate__animated animate__fadeInRightBig flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
     >
