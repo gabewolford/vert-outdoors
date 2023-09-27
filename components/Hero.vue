@@ -30,7 +30,7 @@ defineProps({
 <template>
   <div class="flex flex-col lg:flex-row gap-6">
     <div
-      class="animate__animated animate__fadeInRightBig flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
+      class="md:animate__animated md:animate__fadeInRightBig flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
     >
       <div class="flex flex-col gap-6">
         <h1 class="text-4xl md:text-7xl font-semibold">

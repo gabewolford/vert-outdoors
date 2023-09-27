@@ -1,4 +1,6 @@
-<script></script>
+<script>
+import "animate.css";
+</script>
 
 <template>
   <NuxtLayout>

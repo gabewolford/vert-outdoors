@@ -1,5 +1,4 @@
 <script setup>
-import "animate.css";
 useHead({
   title: "VERT Outdoors",
 });
