@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <div
+  <section
     class="animate__animated animate__fadeInUpBig flex flex-col lg:flex-row gap-6"
   >
     <div
@@ -54,5 +54,5 @@ defineProps({
         class="w-fit h-auto object-contain hero-border-radius"
       />
     </div>
-  </div>
+  </section>
 </template>

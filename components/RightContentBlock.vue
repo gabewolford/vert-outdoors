@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+  <section class="flex flex-col lg:flex-row gap-6 lg:gap-8">
     <div
       class="flex flex-col w-full gap-4 lg:w-1/2 justify-center order-last lg:order-first text-amber-100 lg:px-16"
     >
@@ -52,5 +52,5 @@ defineProps({
         class="object-contain right-content-border-radius"
       />
     </div>
-  </div>
+  </section>
 </template>
