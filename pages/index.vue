@@ -2,6 +2,37 @@
 useHead({
   title: "VERT Outdoors",
 });
+
+const brandsArray = [
+  {
+    name: "Smartwool",
+    logo: "/img/brands/smartwool.png",
+  },
+  {
+    name: "Helly Hansen",
+    logo: "/img/brands/helly-hansen.png",
+  },
+  {
+    name: "Clif Bar & Company",
+    logo: "/img/brands/clif-bar.png",
+  },
+  {
+    name: "Camelbak",
+    logo: "/img/brands/camelbak.png",
+  },
+  {
+    name: "BioLite",
+    logo: "/img/brands/biolite.png",
+  },
+  {
+    name: "Helinox",
+    logo: "/img/brands/helinox.png",
+  },
+  {
+    name: "Therabody",
+    logo: "/img/brands/therabody.png",
+  },
+];
 </script>
 
 <template>
@@ -16,6 +47,7 @@ useHead({
       altText="hero image"
       linkTo="/brands"
     />
+    <BrandBar :brands="brandsArray" />
     <LeftContentBlock
       headerText="Our mission is simple"
       subtext="Extensive retail, product design, merchandising, and marketing knowledge combined with a love of the outdoors allows us to bring an unparalleled depth of service to the you, helping brands and retailers thrive in the changing economy"
