@@ -1,6 +1,8 @@
 <template>
   <footer class="mt-auto bg-[#15150F] p-4 text-center">
-    <nav class="flex flex-col lg:flex-row justify-between gap-6 items-center">
+    <nav
+      class="flex flex-col lg:flex-row justify-between gap-6 items-center lg:h-[250px]"
+    >
       <NuxtLink to="/">
         <img
           src="/img/vert-logo.webp"
@@ -9,12 +11,12 @@
         />
       </NuxtLink>
       <div class="flex flex-col lg:flex-row lg:space-x-10">
-        <NuxtLink to="/brands" class="hover:text-[#B0BED4]">Brands</NuxtLink>
-        <NuxtLink to="/team" class="hover:text-[#B0BED4]">Team</NuxtLink>
-        <NuxtLink to="/documents" class="hover:text-[#B0BED4]"
-          >Documents</NuxtLink
-        >
-        <NuxtLink to="/contact" class="hover:text-[#B0BED4]">Contact</NuxtLink>
+        <NuxtLink to="/brands" class="hover:text-[#3D67C3]">Brands</NuxtLink>
+        <NuxtLink to="/team" class="hover:text-[#3D67C3]">Team</NuxtLink>
+        <NuxtLink to="/documents" class="hover:text-[#3D67C3]"
+          >Documents
+        </NuxtLink>
+        <NuxtLink to="/contact" class="hover:text-[#3D67C3]">Contact</NuxtLink>
       </div>
     </nav>
   </footer>
