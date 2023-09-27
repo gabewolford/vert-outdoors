@@ -1,5 +1,7 @@
 <script></script>
 
 <template>
-  <slot />
+  <div class="relative">
+    <slot />
+  </div>
 </template>

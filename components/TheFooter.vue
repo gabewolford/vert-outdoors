@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-auto bg-[#15150F] p-4 md:p-6 text-center">
+  <footer class="absolute bottom-0 w-full bg-[#15150F] p-4 md:p-6 text-center">
     <nav class="flex flex-col lg:flex-row justify-between gap-6 items-center">
       <NuxtLink to="/">
         <img
