@@ -46,12 +46,12 @@ defineProps({
     </div>
 
     <div
-      class="flex lg:w-3/5 justify-center animate__animated animate__fadeInDown items-center"
+      class="flex w-full lg:w-3/5 justify-center animate__animated animate__fadeInDown items-center"
     >
       <img
         :src="imageUrl"
         :alt="altText"
-        class="h-fit w-auto hero-border-radius"
+        class="h-fit w-fit hero-border-radius"
       />
     </div>
   </div>

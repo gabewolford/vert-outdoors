@@ -34,7 +34,7 @@ defineProps({
     >
       <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-4">
-          <h2 class="text-4xl font-semibold">
+          <h2 class="text-3xl md:text-4xl font-semibold">
             {{ headerText }}
           </h2>
           <h3 class="text-lg">{{ subtext }}</h3>
