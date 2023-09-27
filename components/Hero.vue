@@ -51,7 +51,7 @@ defineProps({
       <img
         :src="imageUrl"
         :alt="altText"
-        class="h-fit w-fit hero-border-radius"
+        class="w-fit h-auto object-contain hero-border-radius"
       />
     </div>
   </div>
