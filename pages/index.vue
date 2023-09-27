@@ -19,7 +19,7 @@ useHead({
     <LeftContentBlock
       headerText="Our mission is simple"
       subtext="Extensive retail, product design, merchandising, and marketing knowledge combined with a love of the outdoors allows us to bring an unparalleled depth of service to the you, helping brands and retailers thrive in the changing economy"
-      ctaText="Learn more"
+      ctaText="Meet our team"
       imageUrl="/img/running.png"
       altText="running image"
       linkTo="/team"
