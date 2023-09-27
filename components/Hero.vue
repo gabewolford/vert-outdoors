@@ -28,9 +28,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col lg:flex-row gap-6">
+  <div
+    class="animate__animated animate__fadeInUpBig flex flex-col lg:flex-row gap-6"
+  >
     <div
-      class="animate__animated animate__fadeInRight flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
+      class="flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
     >
       <div class="flex flex-col gap-6">
         <h1 class="text-4xl md:text-7xl font-semibold">
@@ -45,9 +47,7 @@ defineProps({
       </NuxtLink>
     </div>
 
-    <div
-      class="flex w-full lg:w-3/5 justify-center animate__animated animate__fadeInDown items-center"
-    >
+    <div class="flex w-full lg:w-3/5 justify-center items-center">
       <img
         :src="imageUrl"
         :alt="altText"
