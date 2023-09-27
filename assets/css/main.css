@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #1f2c1e;
+  position: relative;
 }
 
 .hero-border-radius {
