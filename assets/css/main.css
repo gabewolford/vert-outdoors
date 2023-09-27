@@ -5,6 +5,10 @@
 body {
   font-family: "Cabin", sans-serif;
   color: #e2dbaf;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2c1e;
 }
 
 .hero-border-radius {
