@@ -48,8 +48,14 @@ defineProps({
       <h3 class="md:text-xl font-medium">{{ headerText }}</h3>
       <div class="flex flex-col gap-4">
         <p class="text-sm">{{ bodyText }}</p>
-        <p class="text-sm">{{ bodyText2 }}</p>
+        <p v-if="bodyText2" class="text-sm">{{ bodyText2 }}</p>
       </div>
+      <DoubleButton
+        buttonTextLeft="Visit Website"
+        buttonTextRight="View Documents"
+        :leftLinkTo="websiteUrl"
+        rightLinkTo="/documents"
+      />
     </div>
   </section>
 </template>
