@@ -23,6 +23,7 @@ defineProps({
   <div class="flex flex-row w-fit bg-[#635071] rounded-lg">
     <NuxtLink
       :to="leftLinkTo"
+      target="_blank"
       class="w-fit px-4 py-2 hover:underline decoration-2 hover:underline-offset-4 text-white text-md font-medium"
     >
       {{ buttonTextLeft }}
