@@ -48,11 +48,7 @@ defineProps({
     </div>
 
     <div class="flex w-full lg:w-3/5 justify-center items-center">
-      <img
-        :src="imageUrl"
-        :alt="altText"
-        class="w-fit h-auto object-contain hero-border-radius"
-      />
+      <img :src="imageUrl" :alt="altText" class="w-fit h-auto object-contain" />
     </div>
   </section>
 </template>
