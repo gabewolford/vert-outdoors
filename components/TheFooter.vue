@@ -19,7 +19,7 @@
         <NuxtLink to="/contact" class="hover:text-[#3D67C3]">Contact</NuxtLink>
       </div>
     </nav>
-    <div class="flex flex-row justify-end">
+    <div class="flex flex-row justify-center">
       <h6 class="text-xs">© 2023 VERT Outdoors. All Rights Reserved.</h6>
       <!-- <p class="text-xs">
         Designed & developed by
