@@ -62,7 +62,7 @@ const brandsArray = [
       ctaText="Get in touch"
       imageUrl="/img/camelbak.png"
       altText="hero image"
-      linkTo="/team"
+      linkTo="/contact"
     />
   </main>
 </template>
