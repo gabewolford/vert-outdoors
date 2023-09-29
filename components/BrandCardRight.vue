@@ -38,7 +38,7 @@ defineProps({
     </div>
     <div class="flex flex-col gap-6 md:w-1/2 max-h-fit my-auto">
       <h2 class="hidden">{{ brandName }}</h2>
-      <NuxtLink :to="websiteUrl">
+      <NuxtLink :to="websiteUrl" target="_blank">
         <img
           :src="brandLogo"
           :alt="brandName"
