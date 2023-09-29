@@ -37,7 +37,7 @@ const brandsArray = [
 
 <template>
   <main
-    class="w-[320px] md:w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-16 lg:gap-16 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
+    class="w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-16 lg:gap-16 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
   >
     <Hero
       headerText="Elevate your outdoor experience"
