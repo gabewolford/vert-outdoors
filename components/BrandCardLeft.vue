@@ -37,13 +37,11 @@ defineProps({
       class="flex flex-col gap-6 order-1 md:order-0 md:w-1/2 max-h-fit my-auto"
     >
       <h2 class="hidden">{{ brandName }}</h2>
-      <NuxtLink :to="websiteUrl" target="_blank">
-        <img
-          :src="brandLogo"
-          :alt="brandName"
-          class="max-w-[185px] md:max-w-[250px]"
-        />
-      </NuxtLink>
+      <img
+        :src="brandLogo"
+        :alt="brandName"
+        class="max-w-[185px] md:max-w-[250px]"
+      />
       <h3 class="md:text-xl font-medium">{{ headerText }}</h3>
       <div class="flex flex-col gap-4">
         <p class="text-sm">{{ bodyText }}</p>
