@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col bg-[#383E38] gap-4 p-4 rounded-2xl h-full">
+  <div class="flex flex-col bg-[#383E38] gap-4 p-4 md:p-6 rounded-2xl h-full">
     <div class="flex flex-row gap-4 items-center">
       <div class="w-1/3 md:w-2/5">
         <img :src="photoUrl" :alt="name" class="right-content-border-radius" />

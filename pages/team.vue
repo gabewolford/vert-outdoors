@@ -43,20 +43,7 @@ const team = [
   <main
     class="w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-10 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
   >
-    <section
-      class="flex relative items-center max-w-full lg:max-w-[600px] mx-auto"
-    >
-      <img
-        src="/img/team-background-blob.png"
-        alt="blob background"
-        class="max-w-full lg:max-w-1/2"
-      />
-      <h1
-        class="absolute justify-center w-full text-center text-2xl md:text-5xl mb-8"
-      >
-        Meet Team VERT
-      </h1>
-    </section>
+    <h1 class="w-full text-center text-2xl md:text-5xl">Meet Team VERT</h1>
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div v-for="(member, index) in team" :key="index">
         <TeamCard
