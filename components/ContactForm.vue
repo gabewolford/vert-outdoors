@@ -39,22 +39,63 @@ export default {
   <form
     ref="form"
     @submit.prevent="sendEmail"
-    class="flex flex-col w-full md:w-1/2 mx-auto gap-2"
+    class="flex flex-col w-full mx-auto gap-4 md:text-[#1f2c1e]"
   >
-    <label class="text-sm">First Name</label>
-    <input type="text" name="first_name" />
+    <p class="text-xs text-right">* all fields required</p>
 
-    <label class="text-sm">Last Name</label>
-    <input type="text" name="last_name" />
+    <div class="flex flex-col gap-2">
+      <label class="text-sm">First name</label>
+      <input
+        type="text"
+        placeholder="First name"
+        name="first_name"
+        required="true"
+        class="p-2 shadow-md"
+      />
+    </div>
 
-    <label class="text-sm">Subject</label>
-    <input type="text" name="subject" />
+    <div class="flex flex-col gap-2">
+      <label class="text-sm">Last name</label>
+      <input
+        type="text"
+        placeholder="Last name"
+        name="last_name"
+        required="true"
+        class="p-2 shadow-md"
+      />
+    </div>
 
-    <label class="text-sm">Email</label>
-    <input type="email" name="user_email" />
+    <div class="flex flex-col gap-2">
+      <label class="text-sm">Subject</label>
+      <input
+        type="text"
+        placeholder="Subject"
+        name="subject"
+        required="true"
+        class="p-2 shadow-md"
+      />
+    </div>
 
-    <label class="text-sm">Message</label>
-    <textarea name="user_message"></textarea>
+    <div class="flex flex-col gap-2">
+      <label class="text-sm">Email</label>
+      <input
+        type="email"
+        placeholder="Email"
+        name="user_email"
+        required="true"
+        class="p-2 shadow-md"
+      />
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <label class="text-sm">Message</label>
+      <textarea
+        name="user_message"
+        placeholder="Type your message here"
+        required="true"
+        class="p-2 shadow-md"
+      ></textarea>
+    </div>
 
     <button
       type="submit"
