@@ -63,7 +63,7 @@ export default {
           <!-- Close button inside the mobile menu -->
           <NuxtLink
             @click.native="toggleMobileMenu"
-            to="/brands"
+            to="/"
             class="hover:text-[#3D67C3] text-xl"
             >Home</NuxtLink
           >
