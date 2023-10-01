@@ -5,9 +5,21 @@ export default {
       isMobileMenuOpen: false,
     };
   },
+  watch: {
+    isMobileMenuOpen(newValue) {
+      this.toggleBodyScroll(newValue);
+    },
+  },
   methods: {
     toggleMobileMenu() {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    },
+    toggleBodyScroll(isOpen) {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
     },
   },
 };
@@ -27,7 +39,7 @@ export default {
       <!-- Mobile menu button (hidden when menu is open) -->
       <div v-if="!isMobileMenuOpen" class="md:hidden">
         <button @click="toggleMobileMenu">
-          <img src="/img/menu-icon.png" alt="Menu" class="h-6 w-6" />
+          <img src="/img/menu-icon.png" alt="Menu" />
         </button>
       </div>
 
