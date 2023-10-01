@@ -163,14 +163,15 @@ const clients = [
       Document Center
     </h1>
 
-    <!-- <div class="flex flex-col w-full">
-      <div class="md:flex flex-row justify-between text-lg">
-        <h2>Client</h2>
-        <h2>Links</h2>
-      </div>
-    </div> -->
-
     <div class="flex flex-col w-full">
+      <div
+        class="hidden md:flex md:flex-col w-full border-b-2 border-[#e2dbaf] pb-4"
+      >
+        <div class="md:flex flex-row justify-between text-sm">
+          <h2>Brand</h2>
+          <h2>Links</h2>
+        </div>
+      </div>
       <BrandDocsCard
         v-for="client in clients"
         :key="client.name"
