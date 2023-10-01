@@ -27,7 +27,7 @@
           <div
             class="inline-block px-4 py-2 rounded-lg bg-[#2655BB] hover:bg-[#3D67C3]"
           >
-            Contact
+            Get In Touch
           </div>
         </NuxtLink>
       </div>
