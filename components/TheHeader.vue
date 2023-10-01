@@ -43,7 +43,7 @@ export default {
       <!-- Mobile navigation links (full-screen overlay) -->
       <div
         v-if="isMobileMenuOpen"
-        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-90 z-40"
+        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-40"
       >
         <div
           class="flex flex-col h-full justify-center space-y-12 items-center"
@@ -52,31 +52,31 @@ export default {
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/brands"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="hover:text-[#3D67C3] text-xl"
             >Home</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/brands"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="hover:text-[#3D67C3] text-xl"
             >Brands</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/team"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="hover:text-[#3D67C3] text-xl"
             >Team</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/documents"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="hover:text-[#3D67C3] text-xl"
             >Documents</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/contact"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="hover:text-[#3D67C3] text-xl"
             >Contact
           </NuxtLink>
         </div>
