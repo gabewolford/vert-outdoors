@@ -52,7 +52,7 @@ export default {
         placeholder="First name"
         name="first_name"
         required="true"
-        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base"
+        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base text-[#1f2c1e]"
       />
     </div>
 
@@ -63,7 +63,7 @@ export default {
         placeholder="Last name"
         name="last_name"
         required="true"
-        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base"
+        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base text-[#1f2c1e]"
       />
     </div>
 
@@ -74,7 +74,7 @@ export default {
         placeholder="Subject"
         name="subject"
         required="true"
-        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base"
+        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base text-[#1f2c1e]"
       />
     </div>
 
@@ -85,7 +85,7 @@ export default {
         placeholder="Email"
         name="user_email"
         required="true"
-        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base"
+        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base text-[#1f2c1e]"
       />
     </div>
 
@@ -95,7 +95,7 @@ export default {
         name="user_message"
         placeholder="Type your message here"
         required="true"
-        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base"
+        class="p-2 md:p-1 lg:p-2 shadow-md md:text-sm lg:text-base text-[#1f2c1e]"
       ></textarea>
     </div>
 
