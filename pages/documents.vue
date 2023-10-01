@@ -11,14 +11,17 @@ const clients = [
       {
         linkTo: "mailto:matt@vertoutdoors.com?subject=Smartwool Web Request",
         linkText: "Become A Dealer",
+        target: null,
       },
       {
         linkTo: "https://sales.smartwool.com/",
         linkText: "Visit B2B Site",
+        target: "_blank",
       },
       {
         linkTo: "mailto:Nancy_Longworth@vfc.com",
         linkText: "Contact Dealer Service",
+        target: null,
       },
     ],
   },
@@ -29,23 +32,28 @@ const clients = [
       {
         linkTo: "/img/brands/docs/helly-hansen-dealer-app.pdf",
         linkText: "Download Dealer Application",
+        target: "_blank",
       },
       {
         linkTo: "/img/brands/docs/helly-hansen-credit-app.pdf",
         linkText: "Download Credit Application",
+        target: "_blank",
       },
       {
         linkTo: "https://b2bsport.hellyhansen.com/",
         linkText: "Visit B2B Site",
+        target: "_blank",
       },
       {
         linkTo:
           "https://production.brandmaster.com/mars/external.enter?p_com_id=11231",
         linkText: "Brandmaster Image Bank",
+        target: "_blank",
       },
       {
         linkTo: "mailto:Stephanie.Dunagan@hellyhansen.com",
         linkText: "Contact Dealer Service",
+        target: null,
       },
     ],
   },
@@ -56,18 +64,22 @@ const clients = [
       {
         linkTo: "/img/brands/docs/clif-bar-dealer-app.pdf",
         linkText: "Download Dealer Application",
+        target: "_blank",
       },
       {
         linkTo: "/img/brands/docs/clif-bar-credit-app.pdf",
         linkText: "Download Credit Application",
+        target: "_blank",
       },
       {
         linkTo: "https://dealer.clifbar.com/customer/account/login/",
         linkText: "Visit B2B Site",
+        target: "_blank",
       },
       {
         linkTo: "mailto:srfax@clifbar.com",
         linkText: "Contact Customer Service",
+        target: null,
       },
     ],
   },
@@ -78,27 +90,33 @@ const clients = [
       {
         linkTo: "mailto:matt@vertoutdoors.com?subject=Camelbak Web Request",
         linkText: "Become A Dealer",
+        target: null,
       },
       {
         linkTo: "https://authorization.camelbak.com/",
         linkText: "Visit B2B Site",
+        target: "_blank",
       },
       {
         linkTo: "mailto:ekarim@camelbak.com",
         linkText: "Contact Dealer Service",
+        target: null,
       },
       {
         linkTo:
           "https://www.dropbox.com/sh/c89i98sknpwosm8/AADVEc5HLuZDiPYhX8gpmjHja?dl=0",
         linkText: "2023 Products & Asset Package",
+        target: "_blank",
       },
       {
         linkTo: "https://training.camelbak.com/login",
         linkText: "Sign Up For C.R.E.W. Training",
+        target: "_blank",
       },
       {
         linkTo: "https://www.endvr.io/for-sales-associates",
         linkText: "Retailers: Download ENDVR App",
+        target: "_blank",
       },
     ],
   },
@@ -109,10 +127,12 @@ const clients = [
       {
         linkTo: "/img/brands/docs/clif-bar-dealer-app.pdf",
         linkText: "Download Dealer Application",
+        target: "_blank",
       },
       {
         linkTo: "mailto:DealerServices@bioliteenergy.com",
         linkText: "Contact Dealer Service",
+        target: null,
       },
     ],
   },
@@ -123,10 +143,12 @@ const clients = [
       {
         linkTo: "mailto:matt@vertoutdoors.com?subject=Helinox Web Request",
         linkText: "Become A Dealer",
+        target: null,
       },
       {
         linkTo: "mailto:tomiye@helinox.com",
         linkText: "Contact Dealer Service",
+        target: null,
       },
     ],
   },

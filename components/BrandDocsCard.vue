@@ -30,7 +30,7 @@ defineProps({
             :key="link.linkTo"
             class="p-1 hover:text-blue-500 underline underline-offset-4 text-lg"
           >
-            <NuxtLink :to="link.linkTo" target="_blank">
+            <NuxtLink :to="link.linkTo" :target="link.target">
               {{ link.linkText }}
             </NuxtLink>
           </li>
