@@ -14,7 +14,7 @@ const clients = [
         target: null,
       },
       {
-        linkTo: "https://sales.smartwool.com/",
+        linkTo: "https://b2b.smartwool.com/",
         linkText: "Visit B2B Site",
         target: "_blank",
       },
