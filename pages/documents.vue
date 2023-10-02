@@ -156,29 +156,29 @@ const clients = [
 </script>
 
 <template>
-  <main
+  <!-- <main
     class="w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-10 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
-  >
-    <h1 class="w-full text-center text-2xl md:text-5xl font-semibold">
-      Document Center
-    </h1>
+  > -->
+  <h1 class="w-full text-center text-2xl md:text-5xl font-semibold">
+    Document Center
+  </h1>
 
-    <div class="flex flex-col w-full">
-      <div
-        class="hidden md:flex md:flex-col w-full border-b-2 border-[#e2dbaf] pb-4"
-      >
-        <div class="md:flex flex-row justify-between text-sm">
-          <h2>Brand</h2>
-          <h2>Links</h2>
-        </div>
+  <div class="flex flex-col w-full">
+    <div
+      class="hidden md:flex md:flex-col w-full border-b-2 border-[#e2dbaf] pb-4"
+    >
+      <div class="md:flex flex-row justify-between text-sm">
+        <h2>Brand</h2>
+        <h2>Links</h2>
       </div>
-      <BrandDocsCard
-        v-for="client in clients"
-        :key="client.name"
-        :name="client.name"
-        :brandLogo="client.brandLogo"
-        :links="client.links"
-      />
     </div>
-  </main>
+    <BrandDocsCard
+      v-for="client in clients"
+      :key="client.name"
+      :name="client.name"
+      :brandLogo="client.brandLogo"
+      :links="client.links"
+    />
+  </div>
+  <!-- </main> -->
 </template>

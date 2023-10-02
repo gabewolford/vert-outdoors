@@ -40,23 +40,23 @@ const team = [
 </script>
 
 <template>
-  <main
+  <!-- <main
     class="w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-10 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
-  >
-    <h1 class="w-full text-center text-2xl md:text-5xl font-semibold">
-      Meet Team VERT
-    </h1>
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div v-for="(member, index) in team" :key="index">
-        <TeamCard
-          :name="member.name"
-          :title="member.title"
-          :photoUrl="member.photoUrl"
-          :bio="member.bio"
-          :region="member.region"
-          :email="member.email"
-        />
-      </div>
-    </section>
-  </main>
+  > -->
+  <h1 class="w-full text-center text-2xl md:text-5xl font-semibold">
+    Meet Team VERT
+  </h1>
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div v-for="(member, index) in team" :key="index">
+      <TeamCard
+        :name="member.name"
+        :title="member.title"
+        :photoUrl="member.photoUrl"
+        :bio="member.bio"
+        :region="member.region"
+        :email="member.email"
+      />
+    </div>
+  </section>
+  <!-- </main> -->
 </template>

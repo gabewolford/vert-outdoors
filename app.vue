@@ -4,8 +4,6 @@ import "animate.css";
 
 <template>
   <NuxtLayout>
-    <TheHeader />
     <NuxtPage />
-    <TheFooter />
   </NuxtLayout>
 </template>
