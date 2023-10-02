@@ -125,7 +125,7 @@ const clients = [
     brandLogo: "/img/brands/brand-card-images/biolite-logo.png",
     links: [
       {
-        linkTo: "/img/brands/docs/clif-bar-dealer-app.pdf",
+        linkTo: "/img/brands/docs/biolite-dealer-app.pdf",
         linkText: "Download Dealer Application",
         target: "_blank",
       },
