@@ -20,8 +20,15 @@ export default defineNuxtConfig({
         },
       },
     ],
+    "@nuxtjs/sanity",
   ],
   googleFonts: {
     display: "swap",
+  },
+  sanity: {
+    projectId: process.env.NUXT_SANITY_PROJECT_ID,
+    dataset: process.env.NUXT_SANITY_DATASET,
+    apiVersion: process.env.NUXT_SANITY_API_VERSION,
+    useCdn: true,
   },
 });

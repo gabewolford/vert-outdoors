@@ -15,8 +15,8 @@ defineProps({
     >
       <div v-for="(brand, index) in brands" :key="index" class="flex-1 lg:py-6">
         <img
-          :src="brand.logo"
-          :alt="brand.name"
+          :src="brand.imageUrl"
+          :alt="brand.altText"
           class="min-w-[115px] md:min-w[90px] lg:min-w-[80px] h-auto object-contain"
         />
       </div>

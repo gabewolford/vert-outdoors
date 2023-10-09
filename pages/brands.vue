@@ -5,9 +5,6 @@ useHead({
 </script>
 
 <template>
-  <!-- <main
-    class="w-[320px] md:w-[85vw] lg:w-[80vw] 2xl:w-[70vw] mx-auto my-auto flex flex-col gap-16 lg:gap-24 pt-6 md:pt-10 pb-[19rem] lg:pb-[12rem]"
-  > -->
   <BrandCardLeft
     brandName="Smartwool"
     brandLogo="/img/brands/brand-card-images/smartwool-logo.png"
@@ -66,5 +63,4 @@ useHead({
     bodyText="Therabody provides the effective natural solutions you need to take charge of your daily wellness. They have combined education, innovation, and over a decade of pioneering within the tech wellness space to make wellness more accessible for everyone."
     websiteUrl="https://www.therabody.com/"
   />
-  <!-- </main> -->
 </template>
