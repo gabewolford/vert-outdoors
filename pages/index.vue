@@ -42,7 +42,6 @@ const heroData = data._rawValue[0].heroData;
 const galleryData = data._rawValue[0].galleryData;
 const leftContentData = data._rawValue[0].leftContentData;
 const rightContentData = data._rawValue[0].rightContentData;
-console.log(rightContentData);
 </script>
 
 <template>
