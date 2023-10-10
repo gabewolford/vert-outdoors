@@ -3,7 +3,7 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 export const pageType = defineType({
   name: 'page',
   type: 'document',
-  title: 'Page',
+  title: '📄 Pages',
   fields: [
     defineField({name: 'title', type: 'string'}),
     defineField({
@@ -23,8 +23,13 @@ export const pageType = defineType({
         }),
         defineArrayMember({
           name: 'content block',
-          type: 'hero',
+          type: 'contentBlockType',
           title: 'Content Block',
+        }),
+        defineArrayMember({
+          name: 'brand content block',
+          type: 'brandContentBlockType',
+          title: 'Brand Content Block',
         }),
       ],
     }),

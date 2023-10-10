@@ -1,10 +1,10 @@
 import {defineField, defineType} from 'sanity'
-import {PresentationIcon} from '@sanity/icons'
+import {SplitVerticalIcon} from '@sanity/icons'
 
-export const heroType = defineType({
-  name: 'hero',
+export const contentBlockType = defineType({
+  name: 'contentBlockType',
   type: 'object',
-  title: 'Hero',
+  title: 'Content Block',
   fields: [
     defineField({
       name: 'headerText',
@@ -42,7 +42,7 @@ export const heroType = defineType({
       validation: (Rule) => Rule.required(),
     }),
   ],
-  icon: PresentationIcon,
+  icon: SplitVerticalIcon,
   preview: {
     select: {
       title: 'headerText',
@@ -51,8 +51,8 @@ export const heroType = defineType({
     prepare({title, image}) {
       return {
         title: title || 'N/A',
-        subtitle: 'Hero',
-        media: image,
+        subtitle: 'Content Block',
+        media: image || SplitVerticalIcon,
       }
     },
   },

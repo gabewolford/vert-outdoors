@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import {ImagesIcon} from '@sanity/icons'
 
 export const imageGalleryType = defineType({
   name: 'gallery',
@@ -24,4 +25,14 @@ export const imageGalleryType = defineType({
       ],
     },
   ],
+  icon: ImagesIcon,
+  preview: {
+    prepare() {
+      return {
+        title: 'Images',
+        subtitle: 'Brand Logo Bar',
+        media: ImagesIcon,
+      }
+    },
+  },
 })
