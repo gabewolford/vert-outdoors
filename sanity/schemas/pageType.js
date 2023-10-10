@@ -9,7 +9,13 @@ export const pageType = defineType({
       name: 'title',
       type: 'string',
       options: {
-        list: ['Home Page', 'Brands Page', 'Team Page', 'Documents Page', 'Contact Page'],
+        list: [
+          {title: 'Home Page', value: 'Home Page'},
+          {title: 'Brands Page', value: 'Brands Page'},
+          {title: 'Team Page', value: 'Team Page'},
+          {title: 'Documents Page', value: 'Documents Page'},
+          {title: 'Contact Page', value: 'Contact Page'},
+        ],
       },
     }),
     defineField({
