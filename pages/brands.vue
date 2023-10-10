@@ -4,7 +4,7 @@ useHead({
 });
 
 const query = groq`
-  *[_type == "page" && title == "Brand Page"] {
+  *[_type == "page" && title == "Brands Page"] {
     'brandArray': pageBuilder[]{
       brandName,
       'brandLogo': brandLogoImage.asset->url,
