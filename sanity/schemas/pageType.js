@@ -5,7 +5,13 @@ export const pageType = defineType({
   type: 'document',
   title: '📄 Pages',
   fields: [
-    defineField({name: 'title', type: 'string'}),
+    defineField({
+      name: 'title',
+      type: 'string',
+      options: {
+        list: ['Home Page', 'Brands Page', 'Team Page', 'Documents Page', 'Contact Page'],
+      },
+    }),
     defineField({
       name: 'pageBuilder',
       type: 'array',
