@@ -8,7 +8,9 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]">
+  <section
+    class="fade-in-right flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]"
+  >
     <div
       class="flex flex-col gap-6 order-1 md:order-0 md:w-1/2 max-h-fit my-auto"
     >

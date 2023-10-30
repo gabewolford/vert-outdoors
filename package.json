@@ -22,7 +22,6 @@
     "@emailjs/browser": "^3.11.0",
     "@sanity/client": "^6.4.12",
     "@vercel/analytics": "^1.0.2",
-    "animate.css": "^4.1.1",
     "gsap": "^3.12.2"
   }
 }

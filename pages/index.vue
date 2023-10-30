@@ -1,4 +1,52 @@
 <script setup>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+if (process.client) {
+  console.log("register", window, document, document && document.body);
+  gsap.registerPlugin(ScrollTrigger);
+}
+
+onMounted(() => {
+  gsap.from(".fade-in-up", {
+    y: 300,
+    opacity: 0,
+    duration: 1,
+  });
+  gsap.to(".fade-in-up", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+  });
+
+  gsap.from(".fade-in-left", {
+    x: 300,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".fade-in-left",
+      start: "top 100%",
+    },
+    duration: 1,
+  });
+  gsap.to(".fade-in-left", {
+    x: 0,
+    opacity: 1,
+  });
+
+  gsap.from(".fade-in-right", {
+    x: -300,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".fade-in-right",
+      start: "top 100%",
+    },
+    duration: 1,
+  });
+  gsap.to(".fade-in-right", {
+    x: 0,
+    opacity: 1,
+  });
+});
+
 useHead({
   title: "VERT Outdoors",
 });
@@ -42,51 +90,6 @@ const heroData = data._rawValue[0].heroData;
 const galleryData = data._rawValue[0].galleryData;
 const leftContentData = data._rawValue[0].leftContentData;
 const rightContentData = data._rawValue[0].rightContentData;
-
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
-// onMounted(() => {
-//   gsap.from(".fade-in-up", {
-//     y: 300,
-//     opacity: 0,
-//     duration: 1,
-//   });
-//   gsap.to(".fade-in-up", {
-//     y: 0,
-//     opacity: 1,
-//     duration: 1,
-//   });
-
-//   gsap.from(".fade-in-left", {
-//     x: 300,
-//     opacity: 0,
-//     scrollTrigger: {
-//       trigger: ".fade-in-left",
-//       start: "top 100%",
-//     },
-//     duration: 1,
-//   });
-//   gsap.to(".fade-in-left", {
-//     x: 0,
-//     opacity: 1,
-//   });
-
-//   gsap.from(".fade-in-right", {
-//     x: -300,
-//     opacity: 0,
-//     scrollTrigger: {
-//       trigger: ".fade-in-right",
-//       start: "top 100%",
-//     },
-//     duration: 1,
-//   });
-//   gsap.to(".fade-in-right", {
-//     x: 0,
-//     opacity: 1,
-//   });
-// });
 </script>
 
 <template>

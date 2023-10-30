@@ -8,7 +8,9 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]">
+  <section
+    class="fade-in-left flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]"
+  >
     <div class="flex items-center md:w-1/2">
       <img :src="brandData.image" :alt="brandData.brandName" />
     </div>
