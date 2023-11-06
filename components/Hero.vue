@@ -28,7 +28,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="fade-in-up flex flex-col lg:flex-row gap-6">
+  <section class="flex flex-col lg:flex-row gap-6">
     <div
       class="flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
     >
