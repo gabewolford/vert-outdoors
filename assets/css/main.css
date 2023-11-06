@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Giphurs";
+  src: url("./fonts/Giphurs.ttf");
+}
+
 body {
   font-family: "Cabin", sans-serif;
   color: #e2dbaf;
