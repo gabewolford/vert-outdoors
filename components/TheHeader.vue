@@ -29,11 +29,7 @@ export default {
   <header class="p-4 md:p-6">
     <nav class="flex flex-row justify-between items-center">
       <NuxtLink to="/">
-        <img
-          src="/img/vert-logo.webp"
-          alt="VERT logo"
-          class="h-[50px] w-auto"
-        />
+        <img src="/img/vert-logo.svg" alt="VERT logo" class="h-[60px] w-auto" />
       </NuxtLink>
 
       <!-- Mobile menu button (hidden when menu is open) -->

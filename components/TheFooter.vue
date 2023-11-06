@@ -4,11 +4,7 @@
   >
     <nav class="flex flex-col lg:flex-row gap-6 items-center justify-between">
       <NuxtLink to="/">
-        <img
-          src="/img/vert-logo.webp"
-          alt="VERT logo"
-          class="h-[50px] w-auto"
-        />
+        <img src="/img/vert-logo.svg" alt="VERT logo" class="h-[75px] w-auto" />
       </NuxtLink>
       <div class="flex flex-col lg:flex-row lg:space-x-10">
         <NuxtLink to="/brands" class="hover:text-[#3D67C3]">Brands</NuxtLink>
@@ -21,15 +17,6 @@
     </nav>
     <div class="flex flex-row justify-center">
       <h6 class="text-xs">© 2023 VERT Outdoors. All Rights Reserved.</h6>
-      <!-- <p class="text-xs">
-        Designed & developed by
-        <NuxtLink
-          to="https://biiigstretch.studio"
-          target="_blank"
-          class="hover:text-[#3D67C3] hover:underline hover:underline-offset-4"
-          >Biiig Stretch Studio</NuxtLink
-        >
-      </p> -->
     </div>
   </footer>
 </template>
