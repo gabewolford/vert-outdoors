@@ -1,4 +1,6 @@
 <script>
+import "animate.css";
+
 export default {
   data() {
     return {
@@ -26,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <header class="p-4 md:p-6">
+  <header class="p-4 md:p-6 animate__animated animate__fadeIn">
     <nav class="flex flex-row justify-between items-center">
       <NuxtLink to="/">
         <img src="/img/vert-logo.svg" alt="VERT logo" class="h-[60px] w-auto" />
