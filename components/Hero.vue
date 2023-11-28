@@ -1,4 +1,6 @@
 <script setup>
+import "animate.css";
+
 defineProps({
   headerText: {
     type: String,
@@ -28,7 +30,9 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col lg:flex-row gap-6">
+  <section
+    class="flex flex-col lg:flex-row gap-6 animate__animated animate__fadeInUp"
+  >
     <div
       class="flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
     >
