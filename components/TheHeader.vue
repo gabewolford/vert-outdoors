@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <header class="p-4 md:p-6 animate__animated animate__fadeIn">
+  <header class="p-4 md:p-6">
     <nav class="flex flex-row justify-between items-center">
       <NuxtLink to="/">
         <img src="/img/vert-logo.svg" alt="VERT logo" class="h-[60px] w-auto" />
@@ -45,7 +45,7 @@ export default {
       <button
         v-if="isMobileMenuOpen"
         @click="toggleMobileMenu"
-        class="md:hidden absolute top-6 right-4 z-50 text-white"
+        class="md:hidden absolute top-8 right-4 z-[9999] text-white"
       >
         <img src="/img/close-icon.png" alt="Close" class="" />
       </button>
@@ -53,7 +53,7 @@ export default {
       <!-- Mobile navigation links (full-screen overlay) -->
       <div
         v-if="isMobileMenuOpen"
-        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-40"
+        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-[9000]"
       >
         <div
           class="flex flex-col h-full justify-center space-y-12 items-center"

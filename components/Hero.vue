@@ -31,7 +31,7 @@ defineProps({
 
 <template>
   <section
-    class="flex flex-col lg:flex-row gap-6 animate__animated animate__fadeInUp"
+    class="flex flex-col lg:flex-row gap-6 animate__animated animate__fadeInUp z-10"
   >
     <div
       class="flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-amber-100 gap-6"
