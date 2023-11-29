@@ -1,29 +1,19 @@
-<script>
+<script setup>
+import { ref, watch } from "vue";
 import "animate.css";
 
-export default {
-  data() {
-    return {
-      isMobileMenuOpen: false,
-    };
-  },
-  watch: {
-    isMobileMenuOpen(newValue) {
-      this.toggleBodyScroll(newValue);
-    },
-  },
-  methods: {
-    toggleMobileMenu() {
-      this.isMobileMenuOpen = !this.isMobileMenuOpen;
-    },
-    toggleBodyScroll(isOpen) {
-      if (isOpen) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
-    },
-  },
+const isMobileMenuOpen = ref(false);
+
+watch(isMobileMenuOpen, (newValue) => {
+  toggleBodyScroll(newValue);
+});
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
+
+const toggleBodyScroll = (isOpen) => {
+  document.body.style.overflow = isOpen ? "hidden" : "auto";
 };
 </script>
 
@@ -53,7 +43,8 @@ export default {
       <!-- Mobile navigation links (full-screen overlay) -->
       <div
         v-if="isMobileMenuOpen"
-        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-[9000]"
+        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-[9000] animate__animated"
+        :class="{ animate__slideInDown: isMobileMenuOpen }"
       >
         <div
           class="flex flex-col h-full justify-center space-y-12 items-center"
