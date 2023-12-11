@@ -16,7 +16,12 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col w-full border-b-2 border-[#e2dbaf] py-4">
+  <section
+    data-aos="fade-up"
+    data-aos-once="true"
+    data-aos-duration="800"
+    class="flex flex-col w-full border-b-2 border-[#e2dbaf] py-4"
+  >
     <div class="flex flex-col md:flex-row text-xl gap-6">
       <div class="md:w-1/2 pt-2">
         <h3 class="hidden">{{ name }}</h3>

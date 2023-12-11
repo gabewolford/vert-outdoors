@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <section
-    data-aos="fade-right"
+    data-aos="fade-up"
     data-aos-once="true"
     data-aos-duration="800"
     class="flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]"
