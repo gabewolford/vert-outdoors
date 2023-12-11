@@ -35,7 +35,8 @@ const toggleBodyScroll = (isOpen) => {
       <button
         v-if="isMobileMenuOpen"
         @click="toggleMobileMenu"
-        class="md:hidden absolute top-8 right-4 z-[9999] text-white"
+        class="md:hidden absolute top-8 right-4 z-[9999] text-white animate__animated"
+        :class="{ animate__rotateIn: isMobileMenuOpen }"
       >
         <img src="/img/close-icon.png" alt="Close" class="" />
       </button>

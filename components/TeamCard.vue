@@ -8,7 +8,13 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col bg-[#383E38] gap-4 p-4 md:p-6 rounded-2xl h-full">
+  <div
+    data-aos="fade-up"
+    data-aos-once="true"
+    data-aos-duration="800"
+    data-aos-offset="0"
+    class="flex flex-col bg-[#383E38] gap-4 p-4 md:p-6 rounded-2xl h-full"
+  >
     <div class="flex flex-row gap-4 items-center">
       <div class="w-1/3 md:w-2/5">
         <img

@@ -28,7 +28,12 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+  <section
+    data-aos="fade-left"
+    data-aos-once="true"
+    data-aos-duration="800"
+    class="flex flex-col lg:flex-row gap-6 lg:gap-8"
+  >
     <div class="flex lg:w-1/2 justify-center">
       <img
         :src="imageUrl"

@@ -1,6 +1,4 @@
 <script setup>
-import "animate.css";
-
 defineProps({
   brandData: {
     type: Object,
@@ -11,7 +9,10 @@ defineProps({
 
 <template>
   <section
-    class="animate__animated animate__fadeIn flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]"
+    data-aos="fade-left"
+    data-aos-once="true"
+    data-aos-duration="800"
+    class="flex flex-col md:flex-row gap-6 lg:gap-8 lg:max-w[900px]"
   >
     <div class="flex items-center md:w-1/2">
       <img :src="brandData.image" :alt="brandData.brandName" />

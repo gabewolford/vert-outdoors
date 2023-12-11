@@ -28,7 +28,12 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+  <section
+    data-aos="fade-right"
+    data-aos-once="true"
+    data-aos-duration="800"
+    class="flex flex-col lg:flex-row gap-6 lg:gap-8"
+  >
     <div
       class="flex flex-col w-full gap-4 lg:w-1/2 justify-center order-last lg:order-first text-amber-100 lg:px-16"
     >

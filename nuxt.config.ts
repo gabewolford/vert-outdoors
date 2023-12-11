@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxtjs/sanity",
+    "nuxt-aos",
   ],
   googleFonts: {
     display: "swap",

@@ -8,8 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <section>
-    <h2 class="text-3xl md:text-4xl"></h2>
+  <section data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
     <div
       class="flex flex-row w-full overflow-x-scroll md:overflow-x-auto lg:overflow-x-auto items-center space-x-8 md:space-x-12 lg:space-x-10"
     >
