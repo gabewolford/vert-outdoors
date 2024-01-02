@@ -22,7 +22,11 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/sanity",
     "nuxt-aos",
+    "nuxt-simple-sitemap",
   ],
+  site: {
+    url: "https://vert-outdoors.vercel.app",
+  },
   googleFonts: {
     display: "swap",
   },
