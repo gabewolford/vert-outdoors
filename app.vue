@@ -1,6 +1,7 @@
 <script setup>
 useSeoMeta({
   title: "VERT Outdoors",
+  ogUrl: "https://vertoutdoors.com",
   ogTitle: "VERT Outdoors",
   description:
     "Elevate your outdoor experience. We proudly represent the most iconic brands in specialty outdoor, ski, bike, and beyond in the Mid-Atlantic region. Extensive retail, product design, merchandising, and marketing knowledge combined with a love of the outdoors allows us to bring an unparalleled depth of service to the you, helping brands and retailers thrive in the changing economy.",
@@ -17,7 +18,7 @@ useSeoMeta({
 useHead({
   title: "VERT Outdoors",
   meta: [{ name: "VERT Outdoors", content: "Outdoor" }],
-  link: [{ rel: "icon", type: "image/svg", href: "/img/small-logo.svg" }],
+  link: [{ rel: "icon", type: "image/png", href: "/img/small-logo.png" }],
 });
 </script>
 
