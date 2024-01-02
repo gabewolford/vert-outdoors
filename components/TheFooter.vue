@@ -16,7 +16,7 @@
       </div>
     </nav>
     <div class="flex flex-row justify-center">
-      <h6 class="text-xs">© 2023 VERT Outdoors. All Rights Reserved.</h6>
+      <h6 class="text-xs">© 2024 VERT Outdoors. All Rights Reserved.</h6>
     </div>
   </footer>
 </template>
