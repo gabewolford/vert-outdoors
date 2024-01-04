@@ -44,7 +44,7 @@ const toggleBodyScroll = (isOpen) => {
       <!-- Mobile navigation links (full-screen overlay) -->
       <div
         v-if="isMobileMenuOpen"
-        class="md:hidden fixed inset-0 bg-[#15150F] bg-opacity-95 z-[9000] animate__animated"
+        class="md:hidden fixed inset-0 bg-[#1F1707] bg-opacity-95 z-[9000] animate__animated"
         :class="{ animate__slideInDown: isMobileMenuOpen }"
       >
         <div

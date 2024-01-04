@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="absolute bottom-0 w-full bg-[#15150F] p-4 md:p-6 text-center flex flex-col gap-6"
+    class="absolute bottom-0 w-full bg-[#1F1707] p-4 md:p-6 text-center flex flex-col gap-6"
   >
     <nav class="flex flex-col lg:flex-row gap-6 items-center justify-between">
       <NuxtLink to="/">
