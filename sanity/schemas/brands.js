@@ -1,6 +1,6 @@
-import { defineField } from "sanity";
+import { defineType, defineField, defineArrayMember } from "sanity";
 
-export const brands = {
+export const brands = defineType({
   name: "brands",
   type: "document",
   title: "🫱🏽‍🫲🏾 Brands",
@@ -75,7 +75,7 @@ export const brands = {
       title: "Brand Links",
       description: "Links to feature on the Documents page.",
       of: [
-        {
+        defineArrayMember({
           type: "object",
           fields: [
             {
@@ -93,7 +93,7 @@ export const brands = {
               validation: (Rule) => Rule.required(),
             },
           ],
-        },
+        }),
       ],
     }),
 
@@ -117,4 +117,4 @@ export const brands = {
       ],
     },
   ],
-};
+});
