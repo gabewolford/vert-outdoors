@@ -1,3 +1,12 @@
+import Hero from "./components/Hero";
+import BrandBar from "./components/BrandBar";
+
 export default function HomePage() {
-  return <div className="">Home Page</div>;
+  return (
+    <>
+      {/* <Hero />
+
+      <BrandBar /> */}
+    </>
+  );
 }
