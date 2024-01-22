@@ -25,6 +25,7 @@ export const documentCard = defineType({
       type: "array",
       title: "Brand Documents",
       description: "Links to feature on the Documents page.",
+      validation: (Rule) => Rule.required(),
       of: [
         defineArrayMember({
           type: "object",
