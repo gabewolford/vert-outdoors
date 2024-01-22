@@ -1,23 +1,14 @@
 import Image from "next/image";
 import LinkButton from "./Buttons/LinkButton";
-import { client } from "../../../sanity/lib/client";
 
-export default async function Hero() {
-  const data = await client.fetch(`
-    *[_type == "page" && title == "Home Page"] {
-      'heroData': pageBuilder[0]{
-        'imageUrl': image.asset->url,
-        'altText': image.altText,
-        linkTo,
-        subtext,
-        ctaText,
-        headerText,
-      }
-    }
-  `);
-
-  const heroData = data[0]?.heroData;
-
+export default function Hero({
+  heading,
+  subheading,
+  linkTo,
+  buttonText,
+  imageUrl,
+  altText,
+}) {
   return (
     <section
       data-aos="fade-up"
@@ -27,19 +18,17 @@ export default async function Hero() {
     >
       <div className="flex flex-col order-last lg:order-first w-full lg:w-2/5 justify-center text-yellow-500 gap-6">
         <div className="flex flex-col gap-6">
-          <h1 className="text-4xl md:text-7xl font-semibold">
-            {heroData.headerText}
-          </h1>
+          <h1 className="text-4xl md:text-7xl font-semibold">{heading}</h1>
           <h2 className="text-lg md:text-2xl lg:text-xl font-medium">
-            {heroData.subtext}
+            {subheading}
           </h2>
         </div>
-        <LinkButton linkTo={heroData.linkTo} buttonText={heroData.ctaText} />
+        <LinkButton linkTo={linkTo} buttonText={buttonText} />
       </div>
       <div className="flex w-full lg:w-3/5 justify-center items-center">
         <Image
-          src={heroData.imageUrl}
-          alt={heroData.altText}
+          src={imageUrl}
+          alt={altText}
           height={747}
           width={1050}
           className="object-contain"

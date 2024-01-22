@@ -1,27 +1,28 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 export const pages = defineType({
-  name: "page",
+  name: "pages",
   type: "document",
   title: "📄 Pages",
   fields: [
     defineField({
       name: "title",
+      title: "Page Name",
       type: "string",
       options: {
         list: [
-          { title: "Home Page", value: "Home Page" },
-          { title: "Brands Page", value: "Brands Page" },
-          { title: "Team Page", value: "Team Page" },
-          { title: "Documents Page", value: "Documents Page" },
-          { title: "Contact Page", value: "Contact Page" },
+          { title: "Home", value: "Home" },
+          { title: "Brands", value: "Brands" },
+          { title: "Team", value: "Team" },
+          { title: "Documents", value: "Documents" },
+          { title: "Contact", value: "Contact" },
         ],
       },
     }),
     defineField({
-      name: "pageBuilder",
+      name: "pageItems",
       type: "array",
-      title: "Page Builder",
+      title: "Page Items",
       of: [
         defineArrayMember({
           name: "hero",

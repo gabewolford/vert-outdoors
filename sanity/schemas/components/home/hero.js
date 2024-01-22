@@ -7,17 +7,17 @@ export const hero = defineType({
   title: "Hero",
   fields: [
     defineField({
-      name: "headerText",
+      name: "heading",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "subtext",
+      name: "subheading",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "ctaText",
+      name: "buttonText",
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
@@ -45,7 +45,7 @@ export const hero = defineType({
   icon: PresentationIcon,
   preview: {
     select: {
-      title: "headerText",
+      title: "heading",
       image: "image",
     },
     prepare({ title, image }) {

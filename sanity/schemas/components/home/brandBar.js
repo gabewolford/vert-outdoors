@@ -12,13 +12,42 @@ export const brandBar = defineType({
       title: "Brand Logos",
       of: [
         {
-          type: "reference",
+          name: "brands",
+          type: "object",
           title: "Brands",
-          to: [{ type: "brands" }],
-          select: {
-            name: "name",
-            brandLogo: "brandLogo",
-          },
+          fields: [
+            defineField({
+              name: "logo",
+              type: "image",
+              title: "Logo",
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: "name",
+              type: "string",
+              title: "Brand Name",
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: "order",
+              type: "number",
+              title: "Order",
+              description: "Order to display brands alongside other brands.",
+              validation: (Rule) => Rule.required().integer(),
+            }),
+          ],
+        },
+      ],
+    },
+  ],
+  orderings: [
+    {
+      title: "Displayed Order",
+      name: "displayedOrder",
+      by: [
+        {
+          field: "order",
+          direction: "asc",
         },
       ],
     },
@@ -27,7 +56,8 @@ export const brandBar = defineType({
   preview: {
     prepare() {
       return {
-        title: "Brand Bar",
+        title: "Images",
+        subtitle: "Brand Logo Bar",
         media: ImagesIcon,
       };
     },
