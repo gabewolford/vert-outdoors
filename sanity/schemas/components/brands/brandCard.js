@@ -68,34 +68,6 @@ export const brandCard = defineType({
       validation: (Rule) => Rule.max(600),
     }),
     defineField({
-      name: "links",
-      type: "array",
-      title: "Brand Links",
-      description: "Links to feature on the Documents page.",
-      group: "brandDocuments",
-      of: [
-        defineArrayMember({
-          type: "object",
-          fields: [
-            {
-              name: "url",
-              type: "url", // Assuming URL is a string, you can use "url" type
-              title: "URL",
-              description: "The URL to link to.",
-              validation: (Rule) => Rule.required(),
-            },
-            {
-              name: "text",
-              type: "string",
-              title: "Text",
-              description: "Text to display for the link.",
-              validation: (Rule) => Rule.required(),
-            },
-          ],
-        }),
-      ],
-    }),
-    defineField({
       name: "order",
       type: "number",
       title: "Order",
