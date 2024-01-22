@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${cabin.className} text-yellow-500 bg-darkgreen-500 min-h-dvh min-w-full flex flex-col relative`}
       >
         <TheHeader />
-        <main className="py-8 px-8 lg:px-16 lg:py-10 xl:p-20 mx-auto 2xl:p-48 flex flex-col gap-16 min-w-full max-w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl mb-[300px] lg:mb-[200px]">
+        <main className="p-6 md:px-12 md:pb-12 md:pt-6 lg:px-16 lg:pb-10 lg:pt-6 xl:px-20 xl:pt-8 2xl:px-48 flex flex-col mx-auto gap-20 min-w-full max-w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl mb-[300px] lg:mb-[200px]">
           {children}
         </main>
         <TheFooter />
