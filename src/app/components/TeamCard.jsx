@@ -40,7 +40,7 @@ export default function TeamCard({
       </div>
 
       <div className="flex flex-col">
-        <h3 className="text-xs md:text-sm">{bio}</h3>
+        <h3 className="text-sm md:text-base">{bio}</h3>
       </div>
     </div>
   );
