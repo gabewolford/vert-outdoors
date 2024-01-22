@@ -1,6 +1,6 @@
+import { client } from "../../sanity/lib/client";
 import Hero from "./components/Hero";
 import BrandBar from "./components/BrandBar";
-import { client } from "../../sanity/lib/client";
 import ImageLeftTextRight from "./components/ImageLeftTextRight";
 import ImageRightTextLeft from "./components/ImageRightTextLeft";
 
@@ -38,8 +38,6 @@ export default async function HomePage() {
       },
     }
   `);
-
-  console.log(data[0].section1);
 
   const heroData = data[0]?.hero;
   const brandData = data[0]?.brands;
