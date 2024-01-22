@@ -26,7 +26,7 @@ export default function BrandImageLeftTextRight({
           height={57}
           className="max-w-[185px] md:max-w-[250px]"
         />
-        <h3 className="md:text-xl font-medium">{heading}</h3>
+        <h3 className="text-lg md:text-xl font-medium">{heading}</h3>
         <div className="flex flex-col gap-4">
           <p className="text-sm">{paragraph}</p>
           {paragraph2 && <p className="text-sm">{paragraph2}</p>}
