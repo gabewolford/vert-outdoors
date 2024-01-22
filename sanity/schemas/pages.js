@@ -39,6 +39,11 @@ export const pages = defineType({
           type: "imageAndText",
           title: "Image and Text",
         }),
+        defineArrayMember({
+          name: "brandCard",
+          type: "brandCard",
+          title: "Brand Card",
+        }),
       ],
     }),
   ],
