@@ -1,9 +1,10 @@
 import { defineType, defineField } from "sanity";
+import { SplitVerticalIcon } from "@sanity/icons";
 
-export const team = defineType({
-  name: "team",
-  type: "document",
-  title: "👥 Team",
+export const teamCard = defineType({
+  name: "teamCard",
+  type: "object",
+  title: "Team Card",
   fields: [
     defineField({
       name: "name",
@@ -67,6 +68,7 @@ export const team = defineType({
       ],
     },
   ],
+  icon: SplitVerticalIcon,
   preview: {
     select: {
       title: "name",
@@ -77,7 +79,7 @@ export const team = defineType({
       return {
         title: title,
         subtitle: subtitle,
-        media: image,
+        media: image || SplitVerticalIcon,
       };
     },
   },
