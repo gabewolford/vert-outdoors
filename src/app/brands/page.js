@@ -19,7 +19,6 @@ export default async function BrandsPage() {
   `);
 
   const brandArray = data[0].pageItems;
-  console.log(brandArray);
 
   return (
     <>
