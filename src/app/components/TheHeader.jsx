@@ -6,9 +6,12 @@ import Image from "next/image";
 import vertLogo from "../../../public/images/vert-logo.svg";
 import menuIcon from "../../../public/images/menu-icon.png";
 import closeIcon from "../../../public/images/close-icon.png";
+import { PopupButton } from "@typeform/embed-react";
 
 export default function TheHeader() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const formID = process.env.NEXT_PUBLIC_TYPEFORM_PROJECT_ID;
 
   useEffect(() => {
     const toggleBodyScroll = () => {
@@ -79,13 +82,9 @@ export default function TheHeader() {
               >
                 Documents
               </Link>
-              <Link
-                href="/contact"
-                onClick={toggleMobileMenu}
-                className="hover:bg-blue-hover text-xl"
-              >
+              <PopupButton id={formID} className="hover:bg-blue-hover text-xl">
                 Contact
-              </Link>
+              </PopupButton>
             </div>
           </div>
         )}
@@ -100,12 +99,12 @@ export default function TheHeader() {
           <Link href="/documents" className="hover:text-blue-hover">
             Documents
           </Link>
-          <Link
-            href="/contact"
+          <PopupButton
             className="inline-block px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-hover"
+            id={formID}
           >
             Get In Touch
-          </Link>
+          </PopupButton>
         </div>
       </nav>
     </header>
