@@ -24,11 +24,5 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.7,
     },
-    {
-      url: "https://vertoutdoors.com/contact",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
   ];
 }
