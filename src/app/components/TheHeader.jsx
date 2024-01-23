@@ -54,35 +54,27 @@ export default function TheHeader() {
         {isMobileMenuOpen && (
           <div className="md:hidden fixed inset-0 bg-darkbrown-500 bg-opacity-95 z-[9000] animate__animated animate__slideInDown">
             <div className="flex flex-col h-full justify-center space-y-12 items-center">
-              <Link
-                href="/"
-                onClick={toggleMobileMenu}
-                className="hover:bg-blue-hover text-xl"
-              >
+              <Link href="/" onClick={toggleMobileMenu} className=" text-xl">
                 Home
               </Link>
               <Link
                 href="/brands"
                 onClick={toggleMobileMenu}
-                className="hover:bg-blue-hover text-xl"
+                className="text-xl"
               >
                 Brands
               </Link>
-              <Link
-                href="/team"
-                onClick={toggleMobileMenu}
-                className="hover:bg-blue-hover text-xl"
-              >
+              <Link href="/team" onClick={toggleMobileMenu} className="text-xl">
                 Team
               </Link>
               <Link
                 href="/documents"
                 onClick={toggleMobileMenu}
-                className="hover:bg-blue-hover text-xl"
+                className="text-xl"
               >
                 Documents
               </Link>
-              <PopupButton id={formID} className="hover:bg-blue-hover text-xl">
+              <PopupButton id={formID} className="text-xl">
                 Contact
               </PopupButton>
             </div>

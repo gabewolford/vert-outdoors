@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import vertLogo from "../../../public/images/vert-logo.svg";
+import { PopupButton } from "@typeform/embed-react";
 
 export default function TheFooter() {
+  const formID = process.env.NEXT_PUBLIC_TYPEFORM_PROJECT_ID;
+
   return (
     <footer className="absolute bottom-0 h-[300px] lg:h-[200px] w-full bg-darkbrown-500 p-4 md:p-6 text-center flex flex-col gap-6">
       <div className="flex flex-col h-full lg:flex-row gap-6 items-center justify-between">
@@ -19,9 +24,9 @@ export default function TheFooter() {
           <Link href="/documents" className="hover:text-blue-hover">
             Documents
           </Link>
-          <Link href="/contact" className="hover:text-blue-hover">
+          <PopupButton id={formID} className="hover:text-blue-hover">
             Contact
-          </Link>
+          </PopupButton>
         </div>
       </div>
       <div className="flex flex-row justify-center">
