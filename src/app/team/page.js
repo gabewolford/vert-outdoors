@@ -56,7 +56,7 @@ export default async function TeamPage() {
       <h1 className="w-full text-center text-2xl md:text-4xl font-semibold">
         Meet Team VERT
       </h1>
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-8 -mt-10 lg:-mt-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 -mt-10 lg:-mt-6">
         {teamArray.map((member, index) => (
           <TeamCard
             key={index}
