@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import AOSLoader from "./components/utils/AOSLoader";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
+import { Analytics } from "@vercel/analytics/react";
 
 const cabin = Cabin({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         </main>
         <TheFooter />
         <AOSLoader />
+        <Analytics />
       </body>
     </html>
   );
