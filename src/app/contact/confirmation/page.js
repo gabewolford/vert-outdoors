@@ -17,7 +17,7 @@ export const metadata = {
     url: "https://vertoutdoors.com/contact/confirmation",
     images: [
       {
-        url: "https://vert-outdoors-vercel.app/images/og-image.png",
+        url: "https://vert-outdoors.vercel.app/images/og-image.png",
         width: 800,
         height: 800,
         alt: "VERT Outdoors",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   images: [
     {
-      url: "https://vert-outdoors-vercel.app/images/og-image.png",
+      url: "https://vert-outdoors.vercel.app/images/og-image.png",
       width: 800,
       height: 800,
       alt: "VERT Outdoors",
